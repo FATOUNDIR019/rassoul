@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rassoul Pressing</title>
+
+<style>
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background:#f4f9ff;
+    color:#0d3b66;
+}
+
+/* HEADER */
+header{
+    background:#0d3b66;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+header h1{
+    margin:0;
+    font-size:40px;
+}
+
+header p{
+    margin-top:10px;
+    font-size:18px;
+}
+
+/* NAVIGATION */
+nav{
+    background:#145da0;
+    text-align:center;
+    padding:10px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:15px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#ffd60a;
+}
+
+/* SECTION CARDS */
+section{
+    padding:50px;
+    text-align:center;
+}
+
+.container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:25px;
+}
+
+/* CARD STYLE */
+.card{
+    background:white;
+    width:250px;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:scale(1.03);
+}
+
+.card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+.card .description{
+    padding:15px;
+    text-align:center;
+}
+
+.card .price{
+    font-weight:bold;
+    font-size:18px;
+    color:#145da0;
+    margin-bottom:10px;
+}
+
+/* BUTTON */
+button{
+    margin-top:40px;
+    padding:15px 30px;
+    background:#145da0;
+    border:none;
+    border-radius:8px;
+    color:white;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#0d3b66;
+}
+
+/* CALENDAR */
+#reservation{
+    display:none;
+    margin-top:30px;
+}
+
+input[type="date"]{
+    padding:10px;
+    font-size:16px;
+    border-radius:5px;
+    border:1px solid #0d3b66;
+}
+
+/* FOOTER */
+footer{
+    margin-top:50px;
+    padding:20px;
+    background:#0d3b66;
+    color:white;
+    text-align:center;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Rassoul Pressing</h1>
+    <p>Des habits propres, frais et parfaitement repassés - Lac Rose</p>
+</header>
+
+<nav>
+    <a href="#">Accueil</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+</nav>
+
+<section>
+    <h2>Nos Services & Tarifs</h2>
+
+    <div class="container">
+        <div class="card">
+            <img src="c:\Users\HP\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\LocalState\sessions\18F5C40D4FCBC26145B10879CC01FE439556E88D\transfers\2026-07\WhatsApp Image 2026-02-15 at 06.34.40.jpeg" alt="">
+            <img src="c:\Users\HP\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\LocalState\sessions\18F5C40D4FCBC26145B10879CC01FE439556E88D\transfers\2026-07\WhatsApp Image 2026-02-15 at 06.34.35.jpeg" alt="Habit simple">
+            <div class="description">
+                <p>Habit Simple</p>
+                <p class="price">350 FCFA / kg</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="c:\Users\HP\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\LocalState\sessions\18F5C40D4FCBC26145B10879CC01FE439556E88D\transfers\2026-07\WhatsApp Image 2026-02-15 at 06.34.37.jpeg" alt="Bazin Gitzner">
+           
+           <img src="c:\Users\HP\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\LocalState\sessions\18F5C40D4FCBC26145B10879CC01FE439556E88D\transfers\2026-07\WhatsApp Image 2026-02-15 at 06.52.38.jpeg" alt=""> 
+           <div class="description">
+                <p>Bazin Gitzner</p>
+                <p class="price">1500 FCFA / kg</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="c:\Users\HP\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\LocalState\sessions\18F5C40D4FCBC26145B10879CC01FE439556E88D\transfers\2026-07\WhatsApp Image 2026-02-15 at 06.34.43.jpeg" alt="Drap">
+            
+            <img src="c:\Users\HP\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\LocalState\sessions\18F5C40D4FCBC26145B10879CC01FE439556E88D\transfers\2026-07\WhatsApp Image 2026-02-15 at 06.52.17.jpeg" alt="">
+            <div class="description">
+                <p>Drap</p>
+                <p class="price">700 FCFA / kg</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="c:\Users\HP\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\LocalState\sessions\18F5C40D4FCBC26145B10879CC01FE439556E88D\transfers\2026-07\WhatsApp Image 2026-02-15 at 06.34.47.jpeg" alt="Machine à repasser">
+           
+           <img src="c:\Users\HP\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\LocalState\sessions\18F5C40D4FCBC26145B10879CC01FE439556E88D\transfers\2026-07\WhatsApp Image 2026-02-15 at 06.34.42.jpeg" alt=""> 
+           <div class="description">
+                <p>Repassage Professionnel</p>
+                <p class="price"> Non Inclus</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="c:\Users\HP\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\LocalState\sessions\18F5C40D4FCBC26145B10879CC01FE439556E88D\transfers\2026-07\WhatsApp Image 2026-02-15 at 06.34.46.jpeg" alt="Pressing moderne">
+            <div class="description">
+                <p>Pressing Moderne</p>
+                <p class="price">Prix selon service</p>
+            </div>
+        </div>
+    </div>
+
+    <button onclick="showCalendar()">Prendre Rendez-vous</button>
+
+    <div id="reservation">
+        <h3>Choisissez une date</h3>
+        <input type="date">
+    </div>
+
+</section>
+<section id="contact">
+    <h2>Contactez-nous</h2>
+    <p><strong>Téléphone :</strong>765352565/711345139</p>
+    <p><strong>WhatsApp :</strong><a href="https://wa.me/765352565" target="_blank">Envoyer un message</a></p>
+</section>
+
+<footer>
+    © 2026 Rassoul Pressing - Lac Rose
+</footer>
+
+<script>
+function showCalendar(){
+    document.getElementById("reservation").style.display = "block";
+}
+</script>
+
+</body>
+</html>
